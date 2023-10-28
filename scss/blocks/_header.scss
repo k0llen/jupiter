@@ -1,0 +1,29 @@
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 90px;
+    color: #FFF;
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .logo {
+        &-pic {
+        }
+    }
+    &__nav {
+        &-link {
+            transition: .3s all;
+            color: inherit;
+            &:hover{
+                opacity: .7;
+            }
+            +.header__nav-link {
+                margin-left: 35px;
+            }
+        }
+    }
+}

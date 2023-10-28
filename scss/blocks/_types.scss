@@ -1,0 +1,27 @@
+.types {
+    &__block {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 60px;
+        align-items: center;
+        .pic-block{
+
+        }
+        .text{
+            h3, .h3 {
+                color: #909090;
+                +p {
+                    margin-top: 25px;
+                }
+            }
+            p {
+                +.btn {
+                    margin-top: 35px;
+                }
+            }
+        }
+        +.types__block {
+            margin-top: 60px;
+        }
+    }
+}

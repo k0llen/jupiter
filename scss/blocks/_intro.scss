@@ -1,0 +1,18 @@
+.intro {
+    padding-bottom: 215px;
+    background: url(../img/intro-bg.jpg) no-repeat center center;
+    background-size: cover;
+    color: #FFF;
+    h1, .h1 {
+        max-width: 781px;
+        +p {
+            margin-top: 30px;
+        }
+    }
+    p {
+        max-width: 570px;
+        +.btn {
+            margin-top: 50px;
+        }
+    }
+}
