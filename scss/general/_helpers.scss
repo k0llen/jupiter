@@ -86,3 +86,9 @@ a:not(.btn):not(.logo):not(.header__nav-link){
         }
     }
 }
+
+@media screen and (max-width: 990px) {
+    .section{
+        margin-top: 120px;
+    }
+}

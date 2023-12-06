@@ -26,4 +26,22 @@ window.onload = () => {
 
         }
     })
+
+    //burger
+    const burgerBtn = document.querySelector('.burger');
+    const header = document.querySelector('.header');
+    const body = document.querySelector('.body');
+    burgerBtn.addEventListener('click', ()=>{
+        header.classList.toggle('burger--active');
+        body.classList.toggle('lock');
+    })
+    const navButtons = document.querySelectorAll('.header__nav-link');
+    navButtons.forEach(item =>{
+        item.addEventListener('click', () =>{
+            if (header.classList.contains('burger--active')){
+                header.classList.remove('burger--active');
+                body.classList.remove('lock');
+            }
+        })
+    })
 }
