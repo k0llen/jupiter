@@ -364,11 +364,12 @@ a:not(.btn):not(.logo):not(.header__nav-link):hover::after {
     top: 0;
     left: 0;
     padding: 50px 15px 15px 15px;
-    transition: 0.3s transform, 0.5s -webkit-backdrop-filter;
-    transition: 0.3s transform, 0.5s backdrop-filter;
-    transition: 0.3s transform, 0.5s backdrop-filter, 0.5s -webkit-backdrop-filter;
+    transition: 0.3s transform, 0.7s background-color, 0.5s -webkit-backdrop-filter;
+    transition: 0.3s transform, 0.5s backdrop-filter, 0.7s background-color;
+    transition: 0.3s transform, 0.5s backdrop-filter, 0.7s background-color, 0.5s -webkit-backdrop-filter;
     transform: translateY(-100%);
     overflow: hidden;
+    background-color: rgba(0, 0, 0, 0);
   }
   .header__nav-link {
     display: block;
@@ -385,9 +386,7 @@ a:not(.btn):not(.logo):not(.header__nav-link):hover::after {
     z-index: 100;
   }
   .header.burger--active .burger {
-    position: fixed;
-    right: 15px;
-    top: 50px;
+    position: relative;
   }
   .header.burger--active .burger::after {
     transform: rotate(-45deg);
@@ -404,6 +403,7 @@ a:not(.btn):not(.logo):not(.header__nav-link):hover::after {
     transform: translateY(0);
     -webkit-backdrop-filter: blur(6px);
             backdrop-filter: blur(6px);
+    background-color: rgba(0, 0, 0, 0.4);
   }
 }
 .intro {
