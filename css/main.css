@@ -381,7 +381,7 @@ a:not(.btn):not(.logo):not(.header__nav-link):hover::after {
     z-index: 99;
     top: 0;
     left: 0;
-    padding: 50px 15px 15px 15px;
+    padding: 50px 15px;
     transition: 0.3s transform, 0.7s background-color, 0.5s -webkit-backdrop-filter;
     transition: 0.3s transform, 0.5s backdrop-filter, 0.7s background-color;
     transition: 0.3s transform, 0.5s backdrop-filter, 0.7s background-color, 0.5s -webkit-backdrop-filter;
@@ -425,6 +425,7 @@ a:not(.btn):not(.logo):not(.header__nav-link):hover::after {
     -webkit-backdrop-filter: blur(6px);
             backdrop-filter: blur(6px);
     background-color: rgba(0, 0, 0, 0.4);
+    overflow: scroll;
   }
 }
 .intro {
@@ -701,6 +702,7 @@ a:not(.btn):not(.logo):not(.header__nav-link):hover::after {
   font-weight: 700;
   letter-spacing: 1px;
   border: none;
+  border-radius: 0;
   border-bottom: 1px solid #909090;
   color: #909090;
   background: transparent;
