@@ -1,9 +1,9 @@
 .technical {
-    .technical-cards {
+    &-cards {
 
     }
 
-    .technical-card {
+    &-card {
         display: grid;
         grid-template-columns: repeat(2,1fr);
         align-items: center;
@@ -12,6 +12,52 @@
         border-top: 1px solid #909090;
         &:last-child{
             border-bottom: 1px solid #909090;
+        }
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .accordeon-trigger{
+        padding: 24px 48px 24px 0;
+        margin: -24px 0 -24px 0;
+        position: relative;
+        font-size: 21px;
+        &:after{
+            content: '';
+            display: block;
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            width: 28px;
+            height: 28px;
+            background: url(../img/svg/down.svg) no-repeat center center;
+            transform: translateY(-50%);
+            transition: .3s all;
+        }
+    }
+    .accordeon-hidden{
+        height: 0;
+        overflow: hidden;
+        transition: .3s all;
+        max-width: calc(100% - 48px);
+        font-size: 16px;
+    }
+    .technical-card{
+        display: block;
+        padding: 24px 0;
+    }
+
+    .technical-card.opened{
+        padding-bottom: 24px;
+        .accordeon-trigger{
+            &::after{
+                transform: translateY(-50%)rotate(540deg);
+            }
+        }
+        .accordeon-hidden{
+            overflow: visible;
+            margin-top: 16px;
+            height: 100%;
         }
     }
 }

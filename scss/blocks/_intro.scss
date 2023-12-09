@@ -16,3 +16,34 @@
         }
     }
 }
+
+@media screen and (max-width: 990px) {
+    .intro {
+        background-image: url(../img/intro-bg-mobile.png);
+        padding-top: 250px;
+        h1, .h1 {
+            font-size: 56px;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .intro {
+        padding-top: 200px;
+        padding-bottom: 150px;
+        h1, .h1 {
+            font-size: 48px;
+        }
+        p{
+            +.btn {
+                margin-top: 32px;
+            }
+        }
+        .btn{
+            width: 100%;
+            padding: 18px 0;
+            text-align: center;
+        }
+    }
+}
+

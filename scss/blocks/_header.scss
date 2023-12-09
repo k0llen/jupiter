@@ -66,15 +66,16 @@
             left: 0;
             padding: 50px 15px 15px 15px;
             transition: .3s transform, .5s backdrop-filter, .7s background-color;
-            transform: translateY(-100%);
+            transform: translateX(100%);
             overflow: hidden;
             background-color: rgba(0,0,0,0);
             &-link{
                 display: block;
                 width: fit-content;
                 font-size: 28px;
+                line-height: 36px;
                 + .header__nav-link{
-                    margin: 35px 0 0 0;
+                    margin: 24px 0 0 0;
                 }
             }
         }
@@ -87,7 +88,9 @@
 
     .header.burger--active{
         .burger{
-            position: relative;
+            position: fixed;
+            top: 50px;
+            right: 15px;
             &::after{
                 transform: rotate(-45deg);
                 top: 50%;
@@ -101,7 +104,7 @@
             }
         }
         .header__nav{
-            transform: translateY(0);
+            transform: translateX(0);
             backdrop-filter: blur(6px);
             background-color: rgba(0,0,0,0.4);
         }

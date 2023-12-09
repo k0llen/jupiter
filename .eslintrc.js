@@ -1,26 +1,17 @@
 module.exports = {
-  env: {
-    browser: true,
-    commonjs: true,
-    es2021: true,
-  },
-  extends: 'airbnb-base',
-  overrides: [
-    {
-      env: {
-        node: true,
-      },
-      files: [
-        '.eslintrc.{js,cjs}',
-      ],
-      parserOptions: {
-        sourceType: 'script',
-      },
+  meta: {
+    type: "problem",
+    docs: {
+      description: "Disallow the use of `debugger`",
+      recommended: true,
+      url: "https://eslint.org/docs/latest/rules/no-debugger";
     },
-  ],
-  parserOptions: {
-    ecmaVersion: 'latest',
-  },
-  rules: {
-  },
+
+    fixable: null,
+    schema: [],
+
+    messages: {
+      unexpected: "Unexpected 'debugger' statement";
+    }
+  }
 };
