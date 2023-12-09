@@ -788,9 +788,9 @@ a:not(.btn):not(.logo):not(.header__nav-link):hover::after {
 .footer__bottom {
   padding-top: 25px;
   border-top: 1px solid #909090;
-}
-.footer__bottom a + a {
-  margin-left: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
 }
 
 @media screen and (max-width: 990px) {

@@ -143,9 +143,9 @@
     &__bottom {
         padding-top: 25px;
         border-top: 1px solid #909090;
-        a+a{
-            margin-left: 18px;
-        }
+        display: flex;
+        flex-wrap: wrap;
+        gap: 18px;
     }
 }
 
