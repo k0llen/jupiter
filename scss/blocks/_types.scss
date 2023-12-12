@@ -33,14 +33,17 @@
             grid-template-columns: repeat(1,1fr);
             gap: 32px;
             .pic-block{
-                order: 2;
+                order: 1;
                 img{
                     width: 100%;
                     height: 100%;
                 }
             }
             .text{
-                order: 1;
+                order: 2;
+            }
+            h3,.h3{
+                font-size: 32px;
             }
         }
         .btn{
