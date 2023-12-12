@@ -285,16 +285,18 @@ a:not(.btn):not(.logo):not(.header__nav-link) {
 }
 a:not(.btn):not(.logo):not(.header__nav-link)::after {
   content: "";
-  width: 100%;
+  width: 0;
   height: 1px;
   position: absolute;
   bottom: -2px;
-  left: 0;
+  right: 0;
   background: transparent;
   transition: 0.3s all ease-in-out;
 }
 a:not(.btn):not(.logo):not(.header__nav-link):hover::after {
+  left: 0;
   background: #909090;
+  width: 100%;
 }
 
 @media screen and (max-width: 990px) {
